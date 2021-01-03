@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    background-color:#323975;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanalei Fill', cursive;
+    margin: 0;
+    text-align: center;
+}
+.fa-snowflake{
+    color: white;
+    animation: fall linear forwards;
+    position: absolute;
+    top:-20px;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+.time {
+	display: flex;
+	font-size: 1.2em;
+	flex-direction: column;
+	margin: 0 15px;
+}
+
+.time h1 {
+	margin-bottom: 0;
+}
+
+.time small {
+	color: #ccc;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
